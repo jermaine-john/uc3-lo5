@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC3LO5</title>
+
+    
+    
+    <style>
+        #main{
+            border: 2px;
+            border-style: solid;
+            margin: 20px;
+            padding: 30px;   
+        }
+       #fruitTable ul
+        {
+          list-style-type: none;
+        }
+        .ly
+         {
+          padding: 10px;
+          background-color: rgb(155, 221, 0);
+         }      
+         #fruitTable #hide
+         {
+             width: 30px;
+         }
+         #fruitTable label
+         {
+             line-height: 52px;
+         }
+    </style>
+ <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="main"> 
+        <h1 class="headings">Fruit List</h1>
+        <div>
+            <form id="search-fruit">
+                <input type="text" placeholder="Search fruit..." />
+              </form>
+            <form id="add-fruit">
+                
+                
+                
+                <input type="text" id="name" placeholder="add fruit to list"><button>Add to List</button> </br>
+                <input type="checkbox" id="hide">
+                <label for="hide">Hide All Fruits</label>
+    
+            </form>
+            
+            <ul  id="fruitTable">
+                    
+            </ul>
+        </div>
+        <br/>
+
+       
+        <br/><br/>
+        <button onclick="sltAll()">Update List</button>
+       <button onclick=" parChi()">Show Child</button> <button onclick=" kapatiran()">Siblings</button>
+       
+    </div>
+    <div id="main2">
+        <h1>fruit LIST</h1>
+
+        <div id="tabbed-content">
+            <ul class="tabs">
+              <li data-target="#Berries" class="active">Berries</li>
+              <li data-target="#Melons">Melons</li>
+              <li data-target="#Citrus">Citrus</li>
+            </ul>
+            <div class="panel active" id="Berries">
+                <p>Content for Berries tab...</p>
+                <table>
+                    <tr>
+                        <li>strawberries, raspberries, blueberries, kiwifruit and passionfruit.</li>
+                    </tr>
+                </table>
+            </div>
+            <div class="panel" id="Melons">
+                <p>Content for Melons tab...</p>
+                <table>
+                    <tr>
+                        <li>watermelons, rockmelons and honeydew melons.</li>
+                    </tr>
+                </table>
+            </div>
+            <div class="panel" id="Citrus">
+                <p>Content for Citrus tab...</p>
+                <table>
+                    <tr>
+                        <li>oranges, grapefruits, mandarins and limes.</li>
+                    </tr>
+                    
+                </table>
+              </div>
+          </div>
+    </div>
+</div>
+
+   
+    
+    
+    <script src="showContent.js"></script>
+    <script src="parentChild.js"></script>
+    <script src="kapatid.js"></script>
+    <script src="declarations.js"></script>
+    <script src="search.js"></script>
+    <script src="hide.js"></script>
+    <script src="tab.js"></script>
+</body>
+</html>
